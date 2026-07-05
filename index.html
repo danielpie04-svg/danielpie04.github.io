@@ -2,22 +2,154 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Portafolio</title>
-    <style>
-        /* Un adelanto de estilo oscuro para motivarte */
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: sans-serif;
-            padding: 50px;
-        }
-        h1 {
-            color: #39ff14; /* Verde neón */
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Piedrahita | Analista de Datos</title>
+    <link rel=stylesheet href="styles.css">
 </head>
 <body>
-    <h1>Hola, soy [Tu Nombre]</h1>
-    <p>Bienvenido a mi portafolio de proyectos.</p>
+
+    <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">CV</a>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#certificados">Certificados</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTENEDOR PRINCIPAL DIVIDIDO -->
+    <div class="main-layout">
+        
+        <!-- CONTENIDO DE LAS SECCIONES (IZQUIERDA) -->
+        <main class="content-side">
+            
+            <!-- SECCIÓN 1: SOBRE MÍ / INICIO -->
+            <section id="sobre-mi" class="portfolio-section hero-section">
+                <div class="hero-text">
+                    <span class="subtitle">PORTAFOLIO PROFESIONAL</span>
+                    <h1>DANIEL PIEDRAHITA</h1>
+                    <h2>ANALISTA DE DATOS <span class="highlight">BUSINESS INTELLIGENCE</span></h2>
+                    <p>Transformo datos en información valiosa para la toma de decisiones estratégicas. Especializado en análisis, visualización y automatización de reportes con Power BI, Excel y SQL.</p>
+                    <div class="hero-contact-minimal">
+                        <p>📧 daniel.piedrahita@email.com</p>
+                        <p>🔗 linkedin.com/in/danielpiedrahita</p>
+                        <p>📍 Medellín, Colombia</p>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <!-- Aquí irá tu foto de perfil -->
+                    <div class="profile-placeholder"></div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: HABILIDADES -->
+            <section id="habilidades" class="portfolio-section">
+                <h2>HABILIDADES</h2>
+                <p class="section-desc">Conjunto de habilidades técnicas, analíticas y blandas que me permiten generar impacto con los datos.</p>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>TÉCNICAS</h3>
+                        <ul>
+                            <li>Power BI</li>
+                            <li>Excel Avanzado</li>
+                            <li>SQL</li>
+                            <li>Python (Pandas)</li>
+                            <li>DAX</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>ANALÍTICAS</h3>
+                        <ul>
+                            <li>Análisis de Datos</li>
+                            <li>Visualización de Datos</li>
+                            <li>KPIs y Métricas</li>
+                            <li>ETL y Modelado</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>BLANDAS</h3>
+                        <ul>
+                            <li>Pensamiento Analítico</li>
+                            <li>Comunicación Efectiva</li>
+                            <li>Resolución de Problemas</li>
+                            <li>Trabajo en Equipo</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: PROYECTOS DESTACADOS -->
+            <section id="proyectos" class="portfolio-section">
+                <h2>PROYECTOS DESTACADOS Y LOGROS</h2>
+                
+                <div class="project-item">
+                    <div class="project-img-placeholder"></div>
+                    <div class="project-info">
+                        <h3>DASHBOARD DE VENTAS</h3>
+                        <p><strong>Herramientas:</strong> Power BI, Excel, SQL</p>
+                        <p>Análisis del desempeño comercial para identificar productos, categorías y regiones con mayor rentabilidad.</p>
+                    </div>
+                </div>
+
+                <!-- Agrega aquí tu proyecto de Gym Tracker o el resto de tus proyectos -->
+            </section>
+
+            <!-- SECCIÓN 4: EXPERIENCIA Y FORMACIÓN -->
+            <section id="experiencia" class="portfolio-section">
+                <h2>EXPERIENCIA Y FORMACIÓN</h2>
+                <div class="experience-timeline">
+                    <div class="exp-item">
+                        <h3>Analista de Datos | Empresa ABC</h3>
+                        <span class="date">Ene 2023 - Actualidad</span>
+                        <p>Desarrollo de dashboards ejecutivos y automatización de reportes reduciendo tiempos en un 60%.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 5: CERTIFICACIONES -->
+            <section id="certificados" class="portfolio-section">
+                <h2>CERTIFICACIONES</h2>
+                <div class="certificates-container">
+                    <!-- Espacio para colocar las insignias de Microsoft, Coursera, etc. -->
+                    <div class="cert-badge">Microsoft Power BI</div>
+                    <div class="cert-badge">Google Data Analytics</div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 6: CONTACTO -->
+            <section id="contacto" class="portfolio-section">
+                <h2>CONTACTO</h2>
+                <div class="contact-box">
+                    <p>📧 daniel.piedrahita@email.com</p>
+                    <p>📱 +57 300 123 4567</p>
+                    <p>💻 github.com/danielpiedrahita</p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- PANEL FIJO DERECHO: TU GRÁFICO INTERACTIVO (DERECHA) -->
+        <aside class="sticky-visual-side">
+            <div class="chart-box">
+                <h3>Mi Gráfico Circular</h3>
+                <p class="chart-subtitle">(6 partes iguales) ¡Ahora sí rota perfecto!</p>
+                
+                <!-- TU SVG INTERACTIVO DEBERÍA IR AQUÍ -->
+                <div class="interactive-pie-chart-placeholder">
+                    <!-- Reemplaza este contenedor por el elemento SVG interactivo que rota -->
+                    <div class="mock-pie"></div>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
 </body>
 </html>
